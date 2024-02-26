@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>LAB 1</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <canvas class="coord" id="canvas"></canvas>
+    </main>
+
+    <footer>
+      <h1>Lab 1 task</h1>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td>
+              <span>Point A (</span><input type="text" name="x" id="Ax" /><span
+                >, </span
+              ><input type="text" name="y" id="Ay" /><span>)</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Point B (</span><input type="text" name="x" id="Bx" /><span
+                >, </span
+              ><input type="text" name="y" id="By" /><span>)</span>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><span>Triangle Height = </span></td>
+            <td><input type="text" id="height" /></td>
+          </tr>
+          <tr>
+            <td><span>Triangle Color</span></td>
+            <td><input type="color" id="triangle-color" /></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><span>Rectangle </span></td>
+            <td><input type="checkbox" id="isRectangleEnabled" /></td>
+          </tr>
+          <tr>
+            <td><span>Rectangle Color</span></td>
+            <td><input type="color" id="rectangle-color" /></td>
+          </tr>
+        </table>
+        <input type="button" value="Create Triangle" onclick="drawFigure()" />
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
