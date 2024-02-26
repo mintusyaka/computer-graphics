@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  background-color: rgb(249, 249, 249);
+}
+
+footer {
+  padding: 10px;
+}
+
+footer .table-container {
+  display: flex;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.coord {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+}
+
+table {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+input {
+  width: 50px;
+}
+
+input[type="color"] {
+  height: 35px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+input[type="button"] {
+  width: 150px;
+  text-align: center;
+}
