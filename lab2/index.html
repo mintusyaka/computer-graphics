@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LAB 2</title>
+</head>
+<body>
+    <main>
+        <canvas class="coord" id="canvas"></canvas>
+    </main>
+    <footer>
+        <h1>Lab 2 task</h1>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td>
+              <span>Point coords:</span>
+            
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <span>x = </span>
+                <input type="text" name="x", id="point-x-add">
+              </td>
+          </tr>
+          <tr>
+            <td>
+                <span>y = </span>
+                <input type="text" name="y", id="point-y-add">
+              </td>
+          </tr>
+          <tr>
+            <td><input type="color" id="curve-color" /></td>
+            
+            <td><input type="color" id="touchline-color" /></td>
+            
+            <td>
+              <input type="button" name="add-point" id="btnAddPoint" value="Add Point" onclick="addPoint()">
+            </td>  
+          </tr>
+          
+          <tr>
+            <td>
+                <input type="checkbox" name="matrix-method" id="checkboxMatrix">
+                <span>Matrix Method</span>
+              </td>
+        </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                  <span>Сhange point coords:</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span>Point number</span>
+                    <select id="select-point">
+                        
+                    </select>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    <span>x = </span>
+                    <input type="text" name="x", id="point-x-edit">
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    <span>y = </span>
+                    <input type="text" name="y", id="point-y-edit">
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <input type="button" name="edit-point" id="btnEditPoint" value="Edit Point" onclick="editPoint()">
+                </td>  
+              </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                  <span>Get points from interval:</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>x1 = </span>
+                    <input type="text" name="x", id="point-x1">
+                
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <span>x2 = </span>
+                    <input type="text" name="x", id="point-x2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>How many points?</span>
+                    <input type="text" name="x", id="points-count">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="get-points" id="btnGetPoints" value="Get Points" onclick="getPoints()">
+                </td>
+            </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <span>Enter index of row to show:</span>
+            </td>
+          </tr>
+          <tr>
+
+              <td>
+                <input type="text" name="num", id="matrix-row-num">
+              </td>
+          </tr>
+          <tr>
+
+              <td>
+                <input type="button" name="get-matrix-data" id="btnGetMatrixData" value="Get Matrix Data" onclick="getMatrixData()">
+              </td>
+          </tr>
+
+        </table>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

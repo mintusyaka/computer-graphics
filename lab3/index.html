@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LAB 3</title>
+</head>
+<body>
+    <main>
+        <canvas class="coord" id="canvas"></canvas>
+    </main>
+    <footer>
+        <h1>Lab 3 task</h1>
+      <div class="table-container">
+        <table>
+          <tr>
+            <td>
+              <span>C real = </span>
+              <input type="text" name="c-real", id="c-real">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>C imaginary = </span>
+              <input type="text" name="c-imag", id="c-imag">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Max iterations = </span>
+              <input type="text" name="max-iters", id="max-iters">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Scale = </span>
+              <input type="text" name="scale-val", id="scale-val">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Limit = </span>
+              <input type="text" name="const-limit", id="const-limit">
+            </td>
+          </tr> 
+          <tr>
+            <td>
+              <input type="checkbox" value="R" id="R-color">
+              <span>R</span>
+              <input type="checkbox" value="G" id="G-color">
+              <span>G</span>
+              <input type="checkbox" value="B" id="B-color">
+              <span>B</span>
+            </td>
+          </tr>         
+          <tr>
+            <td>
+              <input type="button" name="drawFract" id="btnDraw" value="Draw Algebraic" onclick="drawAlgebraicFractal()">
+            </td>  
+        </tr>
+        </table>
+        <table>
+          <tr>
+          <td>
+            <span>X1 = </span>
+            <input type="text" name="x1", id="x1">
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Y1 = </span>
+              <input type="text" name="y1", id="y1">
+            </td>
+            </tr>
+            <tr>
+              <td>
+                <span>X2 = </span>
+                <input type="text" name="x2", id="x2">
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>Y2 = </span>
+                  <input type="text" name="y2", id="y2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>Iterations = </span>
+                  <input type="text" name="iters-chesaro", id="iters-chesaro">
+                </td> 
+              </tr>
+              <tr>
+                <td>
+                  <input type="button" name="drawFract" id="btnDrawGeometric" value="Draw Chesaro" onclick="beginChesaroFractal()">
+                </td>
+              </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <a type="button" id="download" download="myImage.jpg" href="" onclick="download_img(this);">Download Fractal</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
