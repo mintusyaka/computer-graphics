@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="_canvas"></canvas>
+
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        Change scale
+                    </label>
+                </td>
+            </tr>    
+            <tr>
+                <td class="scale">
+                   <input type="range" min="50" max="200" value="100" id="scale"> 
+                </td>
+            </tr>
+            <tr class="scale_val">
+                <td >
+                    <label>
+                        50%
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        200%
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <table class="point">
+            <tr>
+                <td>
+                    <label>Enter rectangle points</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="point">
+                    <input type="color" id="colorB">
+                    <label>
+                        B
+                    </label>
+                    
+                    <input type="number" id="pointBx">
+                    <input type="number" id="pointBy">
+                </td>
+                <td class="point">
+                    <input type="color" id="colorC">
+                    <label>
+                        C
+                    </label>
+                    <input type="number" id="pointCx">
+                    <input type="number" id="pointCy">
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="point">
+                    <input type="color" id="colorA">
+                    <label>
+                        A
+                    </label>
+                    <input type="number" id="pointAx">
+                    <input type="number" id="pointAy">
+                </td>
+                <td class="point">
+                    <input type="color" id="colorD">
+                    <label>
+                        D
+                    </label>
+                    <input type="number" id="pointDx">
+                    <input type="number" id="pointDy">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="drawRect" onclick="newRectangle()">Draw rectangle</button>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        Animate
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="animateRect" onclick="animateRect()">Animate rectangle</button>
+                </td>
+            </tr>
+            <tr class="download_button">
+                <td>
+                    <label>
+                        Download
+                    </label>
+                </td>
+            </tr>
+            <tr class="download_button">
+                <td>
+                    <button id="downloadMatrix" onclick="downloadMatrix('matrix')">Download matrix</button>
+                </td>
+            </tr>
+            <tr class="download_button">
+                <td>
+                    <button id="downloadFigure" onclick="downloadFigure()">Save figure</button>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="functions.js"></script>
+    <script src="square.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
