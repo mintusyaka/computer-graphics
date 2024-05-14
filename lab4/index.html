@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LAB 4</title>
+</head>
+<body>
+    <label>Choose image:</label>
+    <input type="file" name="img-choose" onchange="readImage(this)">
+
+    <table>
+        <tr class="header">
+            <td>
+                <label>
+                    HSB
+                </label>
+            </td>
+            <td>
+                <label>
+                    RGB
+                </label>
+            </td>
+            <td>
+                <label>
+                    Change Brightness for Green color:
+                </label>
+            </td>
+            
+        </tr>
+       
+
+        
+        <tr>
+            <td>
+                <label>Hue:</label>
+                <input type="number" id="_hue" value="">
+            </td>
+            <td>
+                <label>Red:</label>
+                <input type="number" id="_red" value="">
+            </td>
+            <td>
+                Brightness:
+                <input type="number" id="_change-brightness" value="">
+                <button id="btnApply" onclick="changeBrightness()">Apply</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Saturation:</label>
+                <input type="number" id="_saturation" value="">
+            </td>
+            <td>
+                <label>Green:</label>
+                <input type="number" id="_green" value="">
+            </td>
+            <td>
+                <label>x1:</label>
+                <input type="number" id="_x1" value="">
+                <br>
+                <label>y1:</label>
+                <input type="number" id="_y1" value="">    
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Brightness:</label>
+                <input type="number" id="_brightness" value="">
+            </td>
+            <td>
+                <label>Blue:</label>
+                <input type="number" id="_blue" value="">
+            </td>
+            <td>
+                <label>x2:</label>
+                <input type="number" id="_x2" value="">
+                <br>
+                
+                <label>y2:</label>
+                <input type="number" id="_y2" value="">    
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="radio" name="color-model" id="hsb-color-model" value="hsb" onchange="updateColorModel()">
+            </td>
+            <td>
+                <input type="radio" name="color-model" id="rgb-color-model" value="rgb" onchange="updateColorModel()" checked>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button id="_change-color" onclick="changeColor()">Change color</button>
+            </td>
+            <td>
+                <a type="button" id="download" download="myImage.jpg" href="" onclick="download_img(this);">Download</a>
+            </td>
+        </tr>
+    </table>
+
+    <br>    
+
+    <canvas id="canvasImg">
+
+    </canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
